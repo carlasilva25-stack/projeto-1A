@@ -11,7 +11,8 @@
             text-align: center;
             max-width: 800px;
             margin: 0 auto;
-            border: 16px;
+            border: 5px solid white;
+            padding: 16px;
         }
         main {
             background-color: black;
@@ -37,9 +38,20 @@
     </header>
     <main>
         <img src="Gemini_Generated_Image_dozix2dozix2dozi.png" alt="Imagem da aula de educação digital">
+        <div>
         <h2>Educação digital</h2>
         <p class="autor">POR: CARLA VOTÓRIA</p>
-        <p>este site e para aula de educação digital do 1A</p>
+        <p>este site é para aula de educação digital do 1A</p>
+        <button>😇<span>0</span></button>
+        </div>
     </main>
 </body>
+<script>
+    const botao = document.querySelector("button");
+    botao.addEventListener("click", botaoClicado);
+    function botaoClicado () {
+        let texto = botao.querySelector("span");
+        texto.textContent++;
+    }
+</script>
 </html>
